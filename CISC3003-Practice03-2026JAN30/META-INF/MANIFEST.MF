@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CISC3003-Practice03-2026JAN30
+Bundle-SymbolicName: CISC3003-Practice03-2026JAN30
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Automatic-Module-Name: CISC3003.Practice03.2026JAN30
