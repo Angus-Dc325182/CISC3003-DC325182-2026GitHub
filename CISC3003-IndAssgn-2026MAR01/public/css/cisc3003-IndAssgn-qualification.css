@@ -1,0 +1,233 @@
+/* ============================================
+   cisc3003-IndAssgn-qualification.css
+   Qualification Page – 獨有樣式
+   CISC3003 Web Programming - 2026
+   DC325182 CHE CHI HIN
+   ============================================ */
+
+/* ========== TIMELINE ========== */
+.timeline {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: left;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0; bottom: 0;
+  width: 3px;
+  background: #0ef;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 35px;
+}
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: 9px; top: 6px;
+  width: 15px; height: 15px;
+  background: #0ef;
+  border-radius: 50%;
+  border: 3px solid #1f242d;
+  z-index: 1;
+}
+.section.alt .timeline-dot {
+  border-color: #1b1f27;
+}
+
+.timeline-content {
+  background: #2c3140;
+  padding: 22px 28px;
+  border-radius: 12px;
+  border: 1px solid #3a4050;
+  transition: transform .3s;
+}
+.timeline-content:hover { transform: translateY(-3px); }
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.timeline-header h3 { font-size: 18px; color: #fff; }
+.timeline-date {
+  font-size: 13px;
+  background: #0ef;
+  color: #1f242d;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.timeline-role {
+  font-size: 15px;
+  color: #0ef;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.timeline-detail {
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+.timeline-list {
+  margin-top: 8px;
+}
+.timeline-list li {
+  font-size: 14px;
+  color: #b4b4b4;
+  padding: 4px 0 4px 18px;
+  position: relative;
+  line-height: 1.6;
+}
+.timeline-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #0ef;
+}
+
+/* ========== AWARDS ========== */
+.awards-grid {
+  display: flex;
+  justify-content: center;
+}
+.award-card {
+  background: #2c3140;
+  padding: 35px 40px;
+  border-radius: 14px;
+  border: 1px solid #3a4050;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  transition: transform .3s;
+}
+.award-card:hover { transform: translateY(-4px); }
+.award-icon {
+  font-size: 48px;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+.award-card h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.award-card > p {
+  font-size: 15px;
+  color: #b4b4b4;
+  margin-bottom: 18px;
+}
+.award-img-box {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.award-img-box img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* ========== SERVICES ========== */
+.service-box {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #2c3140;
+  padding: 35px 40px;
+  border-radius: 14px;
+  border: 1px solid #3a4050;
+  text-align: center;
+  transition: transform .3s;
+}
+.service-box:hover { transform: translateY(-3px); }
+.service-icon {
+  font-size: 44px;
+  color: #0ef;
+  margin-bottom: 15px;
+}
+.service-box h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.service-role {
+  font-size: 15px;
+  color: #0ef;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service-list {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.service-list li {
+  font-size: 14px;
+  color: #b4b4b4;
+  padding: 5px 0 5px 18px;
+  position: relative;
+  line-height: 1.6;
+}
+.service-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #0ef;
+}
+
+/* ========== SKILLS ========== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.skill-card {
+  background: #2c3140;
+  padding: 30px 25px;
+  border-radius: 14px;
+  border: 1px solid #3a4050;
+  text-align: center;
+  transition: transform .3s;
+}
+.skill-card:hover { transform: translateY(-4px); }
+.skill-icon {
+  font-size: 40px;
+  color: #0ef;
+  margin-bottom: 14px;
+}
+.skill-card h3 {
+  font-size: 17px;
+  color: #0ef;
+  margin-bottom: 8px;
+}
+.skill-card p {
+  font-size: 14px;
+  color: #b4b4b4;
+  line-height: 1.7;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .skills-grid { grid-template-columns: 1fr; max-width: 400px; }
+  .timeline-header { flex-direction: column; align-items: flex-start; }
+  .award-card { padding: 25px 20px; }
+  .service-box { padding: 25px 20px; }
+}
+
+@media (max-width: 600px) {
+  .timeline-item { padding-left: 40px; }
+  .timeline-content { padding: 18px 20px; }
+}

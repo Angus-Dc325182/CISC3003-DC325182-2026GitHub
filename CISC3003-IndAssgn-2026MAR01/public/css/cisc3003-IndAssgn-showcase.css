@@ -1,0 +1,188 @@
+/* ============================================
+   cisc3003-IndAssgn-showcase.css
+   Showcase Page – 獨有樣式
+   CISC3003 Web Programming - 2026
+   DC325182 CHE CHI HIN
+   ============================================ */
+
+/* ========== LEARNING LOG ========== */
+.log-timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+.log-timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #0ef, #0ef 60%, #3a4050);
+}
+
+.log-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+.log-item:last-child { margin-bottom: 0; }
+
+.log-dot {
+  position: absolute;
+  left: 8px; top: 8px;
+  width: 17px; height: 17px;
+  background: #1f242d;
+  border: 3px solid #0ef;
+  border-radius: 50%;
+  z-index: 1;
+}
+.log-item:last-child .log-dot {
+  background: #0ef;
+  box-shadow: 0 0 10px rgba(0, 238, 255, 0.4);
+}
+
+.log-content {
+  background: #2c3140;
+  padding: 22px 28px;
+  border-radius: 12px;
+  border: 1px solid #3a4050;
+  transition: transform .3s;
+}
+.log-content:hover { transform: translateY(-3px); }
+
+.log-tag {
+  display: inline-block;
+  font-size: 12px;
+  background: rgba(0, 238, 255, 0.12);
+  color: #0ef;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.log-content h3 { font-size: 18px; color: #fff; margin-bottom: 6px; }
+.log-content p { font-size: 14px; color: #b4b4b4; line-height: 1.7; }
+
+/* ========== ACCOMPLISHMENTS ========== */
+.accomplish-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.accomplish-card {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  background: #2c3140;
+  padding: 28px 30px;
+  border-radius: 14px;
+  border: 1px solid #3a4050;
+  text-align: left;
+  transition: transform .3s;
+}
+.accomplish-card:hover { transform: translateY(-4px); }
+
+.accomplish-num {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0ef;
+  min-width: 55px;
+  line-height: 1;
+  padding-top: 4px;
+  text-align: center;
+  opacity: 0.7;
+}
+.accomplish-body h3 { font-size: 18px; color: #fff; margin-bottom: 5px; }
+.accomplish-where {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #0ef;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.accomplish-body p { font-size: 14px; color: #b4b4b4; line-height: 1.7; }
+
+/* ========== PROJECT SHOWCASE ========== */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.showcase-card {
+  background: #2c3140;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #3a4050;
+  transition: transform .3s;
+}
+.showcase-card:hover { transform: translateY(-5px); }
+.showcase-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.showcase-info { padding: 20px; text-align: left; }
+.showcase-info h3 { font-size: 17px; color: #fff; margin-bottom: 6px; }
+.showcase-info p { font-size: 14px; color: #b4b4b4; margin-bottom: 14px; line-height: 1.6; }
+.showcase-btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ========== STATEMENT OF PURPOSE ========== */
+.sop-box {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #2c3140;
+  padding: 40px 45px;
+  border-radius: 16px;
+  border: 1px solid #3a4050;
+  text-align: center;
+}
+.sop-icon {
+  font-size: 50px;
+  color: #0ef;
+  opacity: 0.3;
+  margin-bottom: 15px;
+}
+.sop-box blockquote p {
+  font-size: 18px;
+  color: #ededed;
+  line-height: 1.9;
+  font-style: italic;
+  text-align: left;
+}
+.sop-author {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #0ef;
+  font-weight: 600;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .showcase-grid { grid-template-columns: 1fr; max-width: 450px; }
+  .accomplish-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .accomplish-body { text-align: left; }
+  .accomplish-num { min-width: auto; }
+  .accomplish-where { justify-content: center; }
+  .sop-box { padding: 30px 25px; }
+}
+
+@media (max-width: 600px) {
+  .log-item { padding-left: 40px; }
+  .log-content { padding: 18px 20px; }
+  .sop-box blockquote p { font-size: 16px; }
+}

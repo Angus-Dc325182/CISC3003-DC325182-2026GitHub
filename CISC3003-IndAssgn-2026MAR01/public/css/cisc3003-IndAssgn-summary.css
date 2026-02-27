@@ -1,0 +1,194 @@
+/* ============================================
+   cisc3003-IndAssgn-summary.css
+   Summary Page – 獨有樣式
+   CISC3003 Web Programming - 2026
+   DC325182 CHE CHI HIN
+   ============================================ */
+
+/* ========== GOALS ========== */
+.goal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.goal-card {
+  background: #2c3140;
+  padding: 35px 30px;
+  border-radius: 14px;
+  border: 1px solid #3a4050;
+  text-align: center;
+  transition: transform .3s;
+}
+.goal-card:hover { transform: translateY(-4px); }
+.goal-icon {
+  font-size: 44px;
+  color: #0ef;
+  margin-bottom: 15px;
+}
+.goal-label {
+  display: inline-block;
+  font-size: 13px;
+  background: rgba(0, 238, 255, 0.12);
+  color: #0ef;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.goal-card p {
+  font-size: 15px;
+  color: #b4b4b4;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* ========== PLANNING ========== */
+.plan-timeline {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: left;
+}
+.plan-timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #0ef, #3a4050);
+}
+
+.plan-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 28px;
+}
+.plan-item:last-child { margin-bottom: 0; }
+
+.plan-dot {
+  position: absolute;
+  left: 8px; top: 10px;
+  width: 17px; height: 17px;
+  background: #1b1f27;
+  border: 3px solid #0ef;
+  border-radius: 50%;
+  z-index: 1;
+}
+.plan-item:last-child .plan-dot {
+  background: #0ef;
+  box-shadow: 0 0 12px rgba(0, 238, 255, 0.4);
+}
+
+.plan-content {
+  background: #2c3140;
+  padding: 22px 28px;
+  border-radius: 12px;
+  border: 1px solid #3a4050;
+  transition: transform .3s;
+}
+.plan-content:hover { transform: translateY(-3px); }
+
+.plan-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.plan-tag {
+  display: inline-block;
+  font-size: 12px;
+  background: rgba(0, 238, 255, 0.12);
+  color: #0ef;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.plan-header-icon {
+  font-size: 20px;
+  color: #0ef;
+  opacity: 0.6;
+}
+.plan-content p {
+  font-size: 15px;
+  color: #b4b4b4;
+  line-height: 1.7;
+}
+
+/* ========== REFLECTION ========== */
+.reflection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.reflection-card {
+  background: #2c3140;
+  padding: 30px 28px;
+  border-radius: 14px;
+  border: 1px solid #3a4050;
+  text-align: center;
+  transition: transform .3s;
+}
+.reflection-card:hover { transform: translateY(-4px); }
+.reflection-icon {
+  font-size: 40px;
+  color: #0ef;
+  margin-bottom: 14px;
+}
+.reflection-card h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.reflection-card p {
+  font-size: 14px;
+  color: #b4b4b4;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* --- Quote --- */
+.reflection-quote {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #2c3140;
+  padding: 40px 45px;
+  border-radius: 16px;
+  border: 1px solid #3a4050;
+  text-align: center;
+}
+.quote-icon {
+  font-size: 50px;
+  color: #0ef;
+  opacity: 0.3;
+  margin-bottom: 12px;
+}
+.reflection-quote blockquote p {
+  font-size: 18px;
+  color: #ededed;
+  line-height: 1.9;
+  font-style: italic;
+  text-align: left;
+}
+.quote-author {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #0ef;
+  font-weight: 600;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .goal-grid { grid-template-columns: 1fr; max-width: 450px; }
+  .reflection-grid { grid-template-columns: 1fr; max-width: 450px; }
+  .reflection-quote { padding: 30px 25px; }
+}
+
+@media (max-width: 600px) {
+  .plan-item { padding-left: 40px; }
+  .plan-content { padding: 18px 20px; }
+  .reflection-quote blockquote p { font-size: 16px; }
+}
