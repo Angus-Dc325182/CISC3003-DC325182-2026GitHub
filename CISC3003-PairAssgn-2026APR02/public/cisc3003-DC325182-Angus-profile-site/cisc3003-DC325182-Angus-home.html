@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angus Che's Web | Portfolio</title>
+    <link rel="stylesheet" href="../css/cisc3003-DC325182-Angus-css/cisc3003-DC325182-Angus-home.css">
+    <script src="../js/cisc3003-DC325182-Angus-js/cisc3003-DC325182-Angus-home.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== PROGRESS BAR ===== -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">Angus Che's Web</a>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="../cisc3003-PairAssgn-home.html" class="nav-btn">Business Site</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Che Chi Hin</h1>
+                <h2 class="hero-subtitle">I'm a...</h2>
+                <div class="hero-roles">
+                    <span class="role">CS Student at UM</span>
+                    <span class="role">Photographer</span>
+                    <span class="role">Tech Enthusiast</span>
+                </div>
+                <p class="hero-desc">
+                    A Computer Science student at the University of Macau with a passion 
+                    for technology, photography, and creative multimedia production.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="bx bx-envelope"></i> Contact Me
+                    </a>
+                    <a href="../docs/DC325182_CHECHIHIN_CV.pdf" target="_blank" class="btn btn-outline">
+                        <i class="bx bx-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Angus-Dc325182/CISC3003-DC325182-2026GitHub" target="_blank" title="GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="mailto:dc325182@um.edu.mo" title="Email">
+                        <i class="bx bx-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="../images/cisc3003-DC325182-Angus/angus-main.jpg" alt="Photo of Che Chi Hin">
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="bx bx-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="bx bx-user"></i> Introduction</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="../images/cisc3003-DC325182-Angus/angus-about.jpg" alt="Che Chi Hin">
+                </div>
+                <div class="about-content">
+                    <p>
+                        Hello! I am a Computer Science student at the <strong>University of Macau</strong> 
+                        (Principals' Recommended Admission Scheme). I have a strong passion for both 
+                        technology and creative arts.
+                    </p>
+                    <p>
+                        My background is a unique blend of <strong>coding and multimedia production</strong>. 
+                        I have experience interning at <strong>CEM (Companhia de Electricidade de Macau)</strong> 
+                        where I developed automation tools using VBA and Python. Outside of coding, I am a 
+                        freelance photographer and videographer, having worked with various clients and 
+                        schools in Macau.
+                    </p>
+                    <p>
+                        This website serves as my personal portfolio to document my learning journey 
+                        in Web Programming and showcase my professional development.
+                    </p>
+
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="bx bx-user"></i>
+                            <div>
+                                <span class="label">Name</span>
+                                <span class="value">Che Chi Hin (Angus)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="bx bx-id-card"></i>
+                            <div>
+                                <span class="label">Student ID</span>
+                                <span class="value">DC325182</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="bx bx-envelope"></i>
+                            <div>
+                                <span class="label">Email</span>
+                                <span class="value">dc325182@um.edu.mo</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="bx bx-map"></i>
+                            <div>
+                                <span class="label">Location</span>
+                                <span class="value">Macau, China</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="gallery-section">
+                <h3 class="subsection-title"><i class="bx bx-camera"></i> Photo Gallery</h3>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-gallery1.jpg" alt="Photography Work">
+                        <figcaption>Photography Work</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-gallery2.jpg" alt="CEM Internship">
+                        <figcaption>CEM Internship</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-gallery3.jpg" alt="Video Production">
+                        <figcaption>Video Production</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-gallery4.jpg" alt="UM Campus">
+                        <figcaption>UM Campus</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-gallery5.jpg" alt="Creative Project">
+                        <figcaption>Creative Project</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Experience / Skills -->
+            <div class="skills-section">
+                <h3 class="subsection-title"><i class="bx bx-code-alt"></i> Experience & Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4><i class="bx bx-code-alt"></i> Technical Skills</h4>
+                        <ul class="skill-list">
+                            <li><i class="bx bx-check"></i> HTML & CSS</li>
+                            <li><i class="bx bx-check"></i> Python</li>
+                            <li><i class="bx bx-check"></i> C Language</li>
+                            <li><i class="bx bx-check"></i> VBA</li>
+                            <li><i class="bx bx-check"></i> Object Detection (YOLO)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h4><i class="bx bx-camera"></i> Creative Skills</h4>
+                        <ul class="skill-list">
+                            <li><i class="bx bx-check"></i> Photography</li>
+                            <li><i class="bx bx-check"></i> Videography</li>
+                            <li><i class="bx bx-check"></i> Video Editing (Premiere Pro)</li>
+                            <li><i class="bx bx-check"></i> Photography Tutoring</li>
+                            <li><i class="bx bx-check"></i> Event Coverage</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h4><i class="bx bx-brain"></i> AI & Tools</h4>
+                        <ul class="skill-list">
+                            <li><i class="bx bx-check"></i> Generative AI</li>
+                            <li><i class="bx bx-check"></i> OpenCV</li>
+                            <li><i class="bx bx-check"></i> Adobe Photoshop</li>
+                            <li><i class="bx bx-check"></i> Adobe Lightroom</li>
+                            <li><i class="bx bx-check"></i> Microsoft Office</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROFILE SECTION ===== -->
+    <section class="section section-alt" id="profile">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="bx bx-heart"></i> Values & Aspirations</span>
+                <h2 class="section-title">My Profile</h2>
+            </div>
+
+            <!-- Values & Beliefs -->
+            <div class="profile-block">
+                <div class="profile-card values-card">
+                    <div class="card-icon">
+                        <i class="bx bx-bulb"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>My Values & Beliefs</h3>
+                        <p>
+                            I believe in the intersection of <strong>Logic and Creativity</strong>. 
+                            As someone who codes and also creates multimedia content, I value precision 
+                            in engineering but also the aesthetic appeal in design. <strong>Integrity</strong> 
+                            and <strong>continuous learning</strong> are the core principles that guide 
+                            my academic and professional life.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="profile-card aspirations-card">
+                    <div class="card-icon">
+                        <i class="bx bx-target-lock"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Career Aspirations</h3>
+                        <p>
+                            My goal is to become an <strong>AI-driven Software Engineer</strong> or a 
+                            <strong>Multimedia Technologist</strong>. I aim to leverage my skills in 
+                            Python, Object Detection (YOLO), and Generative AI to build intelligent 
+                            solutions that solve real-world problems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests & Hobbies -->
+            <div class="interests-section">
+                <h3 class="subsection-title"><i class="bx bx-heart-circle"></i> Interests & Hobbies</h3>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="bx bx-camera"></i>
+                        </div>
+                        <h4>Photography & Videography</h4>
+                        <p>Expert in composition, shooting, and editing using Premiere Pro and Lightroom.</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="bx bx-palette"></i>
+                        </div>
+                        <h4>Graphic Design</h4>
+                        <p>Creating engaging posters and social media content. Vice of Propaganda at BCSA.</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="bx bx-bot"></i>
+                        </div>
+                        <h4>AI Exploration</h4>
+                        <p>Experimenting with Generative AI tools for creative asset generation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photography Gallery -->
+            <div class="photography-section">
+                <h3 class="subsection-title"><i class="bx bx-image"></i> My Photography Hobby</h3>
+                <div class="photo-grid">
+                    <figure class="photo-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-photo1.jpg" alt="Landscape Shot">
+                        <figcaption>Landscape Shot</figcaption>
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-photo2.jpg" alt="Portrait Session">
+                        <figcaption>Portrait Session</figcaption>
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-photo3.jpg" alt="Event Coverage">
+                        <figcaption>Event Coverage</figcaption>
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../images/cisc3003-DC325182-Angus/angus-photo4.jpg" alt="Street Photography">
+                        <figcaption>Street Photography</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Blog Posts -->
+            <div class="blog-section">
+                <h3 class="subsection-title"><i class="bx bx-edit"></i> My Blog Posts</h3>
+                <p class="subsection-desc">Recent thoughts on Technology</p>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-tag">AI & Design</div>
+                        <h4>How Generative AI is Changing Graphic Design</h4>
+                        <p>
+                            Exploring the impact of AI-powered tools on the creative workflow and 
+                            how designers can adapt to this new era of automated content generation.
+                        </p>
+                        <a href="#" class="blog-link">Read More <i class="bx bx-right-arrow-alt"></i></a>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-tag">Computer Vision</div>
+                        <h4>My Experience with YOLO Object Detection</h4>
+                        <p>
+                            A personal account of implementing YOLO for real-time object detection, 
+                            the challenges I faced, and the results I achieved in my university project.
+                        </p>
+                        <a href="#" class="blog-link">Read More <i class="bx bx-right-arrow-alt"></i></a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUALIFICATIONS SECTION ===== -->
+    <section class="section" id="qualifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="bx bx-award"></i> Education & Experience</span>
+                <h2 class="section-title">Qualifications & CV</h2>
+            </div>
+
+            <div class="qual-grid">
+                <!-- Education -->
+                <div class="qual-column">
+                    <h3 class="qual-title"><i class="bx bx-book"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Aug 2023 – Present</span>
+                                <h4>University of Macau</h4>
+                                <p>Bachelor of Science in Computer Science</p>
+                                <span class="timeline-badge">First Year Scholarship – Principals' Recommended Admission Scheme</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Aug 2008 – June 2023</span>
+                                <h4>Pooi To Middle School</h4>
+                                <p>Student of Science</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="qual-column">
+                    <h3 class="qual-title"><i class="bx bx-briefcase"></i> Work Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">July 2025 – Aug 2025</span>
+                                <h4>Companhia de Electricidade de Macau (CEM)</h4>
+                                <p>Summer Intern — Transmission & Distribution Dept.</p>
+                                <ul class="timeline-list">
+                                    <li>Developed a VBA tool to automate image filing and hyperlinking</li>
+                                    <li>Researched Object Detection technologies (YOLO, OpenCV, Python)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">May 2024 – Present</span>
+                                <h4>Pooi To Middle School</h4>
+                                <p>Integrated Activity Instructor — Photography & Video Production</p>
+                                <ul class="timeline-list">
+                                    <li>Instruct secondary students on photography concepts</li>
+                                    <li>Guide students through hands-on creative projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Aug 2021 – Present</span>
+                                <h4>Freelance & Media Production</h4>
+                                <p>Photographer / Videographer</p>
+                                <ul class="timeline-list">
+                                    <li>Provide photography/videography services for various clients</li>
+                                    <li>Formerly Control Room Assistant for Macao China Electronic Sports Union Federation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Awards -->
+			<div class="awards-section">
+			    <h3 class="subsection-title"><i class="bx bx-trophy"></i> My Awards</h3>
+			    <div class="awards-grid">
+			        <div class="award-card">
+			            <div class="award-icon gold">
+			                <i class="bx bx-medal"></i>
+			            </div>
+			            <div class="award-content">
+			                <h4>Gold Award in Social Sciences Category</h4>
+			                <p>International Festival Of I-FEST2</p>
+			            </div>
+			        </div>
+			        <div class="award-card">
+			            <div class="award-icon champion">
+			                <i class="bx bx-trophy"></i>
+			            </div>
+			            <div class="award-content">
+			                <h4>First Prize, Tertiary Sector: Artificial Intelligence for National Security Video Competition</h4>
+			                <p>Video Production</p>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+
+            <!-- Services & Leadership -->
+            <div class="services-section">
+                <h3 class="subsection-title"><i class="bx bx-group"></i> Services & Leadership</h3>
+                <div class="service-card">
+                    <h4>Boarders' Communication Students' Association (BCSA)</h4>
+                    <p class="service-role">Vice of Propaganda Design Department | Jan 2025 – Dec 2025</p>
+                    <ul class="service-list">
+                        <li><i class="bx bx-check"></i> Designed event posters and produced engaging IG Reels</li>
+                        <li><i class="bx bx-check"></i> Directed multimedia production for the "BC Theatre"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Skills & Languages -->
+            <div class="languages-section">
+                <h3 class="subsection-title"><i class="bx bx-world"></i> Skills & Languages</h3>
+                <div class="lang-grid">
+                    <div class="lang-card">
+                        <i class="bx bx-code-alt"></i>
+                        <h4>Computer Science</h4>
+                        <p>Python, HTML, C++, Microsoft Office Specialist</p>
+                    </div>
+                    <div class="lang-card">
+                        <i class="bx bx-bot"></i>
+                        <h4>AI Proficiency</h4>
+                        <p>Generative AI tools (Debugging, Content Drafting, Asset Generation)</p>
+                    </div>
+                    <div class="lang-card">
+                        <i class="bx bx-movie"></i>
+                        <h4>Multimedia</h4>
+                        <p>Adobe Photoshop, Premiere Pro, Lightroom</p>
+                    </div>
+                    <div class="lang-card">
+                        <i class="bx bx-message-square-dots"></i>
+                        <h4>Languages</h4>
+                        <p>Cantonese (Native), Mandarin (Fluent), English (Fluent)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SHOWCASE SECTION ===== -->
+    <section class="section section-alt" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="bx bx-trophy"></i> Portfolio</span>
+                <h2 class="section-title">My Showcase</h2>
+                <p class="section-desc">Learning Journey, Accomplishments & Vision</p>
+            </div>
+
+            <!-- Learning Log -->
+            <div class="learning-section">
+                <h3 class="subsection-title"><i class="bx bx-book-open"></i> My Learning Log</h3>
+                <p class="subsection-desc">Documentation of my technical growth</p>
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <div class="learning-period">Week 1–3 | Web Programming</div>
+                        <h4>HTML5 & CSS Layouts</h4>
+                        <p>
+                            Mastered HTML5 semantic structure and CSS Float layouts. 
+                            Built foundational responsive pages following course exercises.
+                        </p>
+                    </div>
+                    <div class="learning-card">
+                        <div class="learning-period">Summer 2025 | Python</div>
+                        <h4>Computer Vision with OpenCV</h4>
+                        <p>
+                            Learned OpenCV and NumPy for Object Detection tasks during CEM internship. 
+                            Researched YOLO architecture for real-time detection applications.
+                        </p>
+                    </div>
+                    <div class="learning-card">
+                        <div class="learning-period">Ongoing</div>
+                        <h4>Generative AI Exploration</h4>
+                        <p>
+                            Exploring Generative AI tools for code debugging, content creation, 
+                            and creative asset generation in multimedia projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accomplishments -->
+            <div class="accomplishments-section">
+                <h3 class="subsection-title"><i class="bx bx-star"></i> Accomplishments & Projects</h3>
+                <div class="accomplish-grid">
+                    <div class="accomplish-card">
+                        <div class="accomplish-number">01</div>
+                        <div class="accomplish-content">
+                            <h4>Automated Image Filing Tool</h4>
+                            <span class="accomplish-place">CEM — Summer Internship</span>
+                            <p>
+                                Developed using VBA. This tool automated the filing and hyperlinking 
+                                of images, significantly optimizing the department's workflow efficiency.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accomplish-card">
+                        <div class="accomplish-number">02</div>
+                        <div class="accomplish-content">
+                            <h4>"BC Theatre" Multimedia Production</h4>
+                            <span class="accomplish-place">BCSA</span>
+                            <p>
+                                Directed the filming and editing of the event video. 
+                                Oversaw the entire multimedia production process from storyboarding to final cut.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accomplish-card">
+                        <div class="accomplish-number">03</div>
+                        <div class="accomplish-content">
+                            <h4>Photography Instructor</h4>
+                            <span class="accomplish-place">Pooi To Middle School</span>
+                            <p>
+                                Designed curriculum and guided secondary students through hands-on 
+                                creative photography projects covering composition, lighting, and post-processing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Showcase -->
+            <div class="projects-section">
+                <h3 class="subsection-title"><i class="bx bx-folder-open"></i> Project Showcase</h3>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="../images/cisc3003-DC325182-Angus/angus-demo01.png" alt="Demo Project 01">
+                        </div>
+                        <div class="project-content">
+                            <h4>CISC3003 Practice 08 Worksheet 2026MAR20</h4>
+                            <p>To demonstrate the ability to use jQuery to respond to events and to programmatically modify the given HTML file.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="demo/cisc3003-DC325182-Angus-demo01.html" class="btn btn-sm">
+                                    <i class="bx bx-link-external"></i> View Demo
+                                </a>
+                                <a href="https://github.com/Angus-Dc325182/CISC3003-DC325182-2026GitHub/tree/master/CISC3003-Practise08-2026MAR20" target="_blank" class="btn btn-sm btn-ghost">
+                                    <i class="bx bxl-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Statement of Purpose -->
+            <div class="statement-section">
+                <blockquote class="statement">
+                    <p>
+                        "I mix code with creativity to build tools that look as good as they work. My goal? Making tech feel more human"
+                    </p>
+                    <cite>— Che Chi Hin</cite>
+                </blockquote>
+            </div>
+
+            <!-- Goals & Planning -->
+            <div class="goals-section">
+                <h3 class="subsection-title"><i class="bx bx-target-lock"></i> Goals & Planning</h3>
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <div class="goal-icon"><i class="bx bx-book"></i></div>
+                        <h4>Academic Goal</h4>
+                        <p>
+                            To master Full-stack Web Development and deepen my knowledge 
+                            in Artificial Intelligence algorithms.
+                        </p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon"><i class="bx bx-code-alt"></i></div>
+                        <h4>Skill Goal</h4>
+                        <p>
+                            To integrate my multimedia skills (Adobe Suite) with front-end 
+                            coding (CSS/JS) to create visually stunning web applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="planning-timeline">
+                    <div class="planning-item">
+                        <span class="planning-label">Short-term</span>
+                        <p>Complete the CISC3003 course with an A grade and build a solid portfolio website.</p>
+                    </div>
+                    <div class="planning-item">
+                        <span class="planning-label">Mid-term</span>
+                        <p>Seek advanced internships in AI or Web Development during the next summer break.</p>
+                    </div>
+                    <div class="planning-item">
+                        <span class="planning-label">Long-term</span>
+                        <p>Pursue a Master's degree in Computer Science or start a tech-media consultancy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reflection -->
+            <div class="reflection-section">
+                <h3 class="subsection-title"><i class="bx bx-message-square-detail"></i> Reflection & Future Directions</h3>
+                <div class="reflection-grid">
+                    <div class="reflection-card">
+                        <h4><i class="bx bx-building"></i> CEM Internship</h4>
+                        <p>
+                            My internship at CEM taught me the importance of automation in business workflows. 
+                            Creating the VBA tool was a turning point where I realized code can save hours of manual labor.
+                        </p>
+                    </div>
+                    <div class="reflection-card">
+                        <h4><i class="bx bx-group"></i> BCSA Leadership</h4>
+                        <p>
+                            As the Vice of Propaganda at BCSA, I learned leadership and team coordination. 
+                            In the future, I want to lead technical teams where I can bridge the gap between engineers and designers.
+                        </p>
+                    </div>
+                </div>
+                <blockquote class="reflection-quote">
+                    <p>
+                        "Every project I complete reinforces one belief: technology is most powerful when it serves people. 
+                        My journey is just beginning, and I am excited about every challenge ahead."
+                    </p>
+                    <cite>— Che Chi Hin</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="bx bx-envelope"></i> Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        Feel free to reach out for collaborations or just to say hello!
+                    </p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="bx bx-envelope"></i>
+                            <a href="mailto:dc325182@um.edu.mo">dc325182@um.edu.mo</a>
+                        </li>
+                        <li>
+                            <i class="bx bxl-github"></i>
+                            <a href="https://github.com/Angus-Dc325182/CISC3003-DC325182-2026GitHub" target="_blank">github.com/Angus-Dc325182</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-map"></i>
+                            <span>University of Macau, Macau SAR</span>
+                        </li>
+                    </ul>
+                    <div class="contact-social">
+                        <a href="https://github.com/Angus-Dc325182/CISC3003-DC325182-2026GitHub" target="_blank"><i class="bx bxl-github"></i></a>
+                        <a href="mailto:dc325182@um.edu.mo"><i class="bx bx-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="bx bx-send"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUICK NAV ===== -->
+    <div class="quick-nav">
+        <a href="#about">About</a>
+        <a href="#profile">Profile</a>
+        <a href="#qualifications">Qualifications</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2026 Che Chi Hin. All rights reserved.</p>
+        <p>CISC3003 Web Programming - 2026: DC325182 CHE CHI HIN</p>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop">
+        <i class="bx bx-up-arrow-alt"></i>
+    </button>
+
+</body>
+</html>

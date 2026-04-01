@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joey Chang's Portfolio - Computer Science Student at University of Macau">
+    <title>Joey Chang | CS Student Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/cisc3003-DC32542-Joey-css/cisc3003-DC32542-Joey-home.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-code"></i> Joey Chang
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../cisc3003-PairAssgn-home.html" class="active">Business Site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="../images/cisc3003-DC32542-Joey/joey.jpg" alt="Joey Chang - CS Student" class="profile-img">
+                <h1>Hi, I'm Joey Chang <span class="wave">👋</span></h1>
+                <p class="subtitle">Computer Science Student | University of Macau</p>
+                <div class="cta-buttons">
+                    <a href="../docs/Joey-CV.pdf" class="btn primary" target="_blank">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn secondary">
+                        <i class="fas fa-paper-plane"></i> Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <p class="section-subtitle">Get To Know More</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content-wrapper">
+                <div class="about-img-side">
+                    <img src="../images/cisc3003-DC32542-Joey/joey2.jpg" alt="Joey Chang" class="about-rectangle-img">
+                </div>
+                <div class="about-text-side">
+                    <p>
+                        Hello! I'm <strong>Joey</strong>, a passionate junior student majoring in 
+                        <strong>Computer Science</strong> at the <strong>University of Macau</strong>.
+                    </p>
+                    <p>
+                        I have a diverse personality. When coding or studying, I tend to be 
+                        <strong>quiet and focused</strong>, enjoying the process of diving deep into 
+                        technical details. However, in my daily life, I am <strong>active and energetic</strong>, 
+                        always eager to meet new people and explore new things.
+                    </p>
+                    <p>
+                        This balance allows me to stay grounded when solving complex technical problems 
+                        while maintaining positive communication in team collaborations.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Scholarship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience/Skills Section -->
+        <section id="experience" class="experience">
+            <p class="section-subtitle">What I Know</p>
+            <h2 class="section-title">Skills & Experience</h2>
+            <div class="experience-container">
+                <div class="details-container">
+                    <h3 class="experience-sub-title">
+                        <i class="fas fa-laptop-code"></i> Frontend Development
+                    </h3>
+                    <div class="article-container">
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>HTML5</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>CSS3</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Responsive Design</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3 class="experience-sub-title">
+                        <i class="fas fa-tools"></i> Tools & Languages
+                    </h3>
+                    <div class="article-container">
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Git & GitHub</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>VS Code</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Eclipse</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <p class="section-subtitle">Browse My Work</p>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-btns">
+                            <a href="../cisc3003-DC325420-Joey-profile-site/cisc3003-DC325420-Joey-demo01.html" class="btn outline">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <!-- Profile/Values Section -->
+        <section id="profile">
+            <p class="section-subtitle">My Core Beliefs</p>
+            <h2 class="section-title">Values & Traits</h2>
+            <div class="experience-container">
+                <div class="details-container">
+                    <h3 class="experience-sub-title">
+                        <i class="fas fa-lightbulb"></i> Proactive Learning
+                    </h3>
+                    <h4 style="color: var(--primary); margin-bottom: 0.8rem;">ATTITUDE</h4>
+                    <p style="color: var(--grey);">
+                        I look beyond textbooks. When facing new technologies, I take the initiative 
+                        to find answers and enjoy learning through practice.
+                    </p>
+                </div>
+                <div class="details-container">
+                    <h3 class="experience-sub-title">
+                        <i class="fas fa-balance-scale"></i> Dynamic Balance
+                    </h3>
+                    <h4 style="color: var(--primary); margin-bottom: 0.8rem;">TRAIT</h4>
+                    <p style="color: var(--grey);">
+                        Being quiet allows me to focus on code details, while my active side fosters 
+                        effective team communication.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="experience-container" style="margin-top: 2rem;">
+                <div class="details-container hobby-card">
+                    <div style="overflow: hidden;">
+                        <img src="../images/cisc3003-DC32542-Joey/travel.jpg" alt="Traveling" class="hobby-img">
+                    </div>
+                    <h3>✈️ Traveling</h3>
+                    <p>Visiting different places helps me relax and provides new perspectives on the world.</p>
+                </div>
+                <div class="details-container hobby-card">
+                    <div style="overflow: hidden;">
+                        <img src="../images/cisc3003-DC32542-Joey/game.jpg" alt="Gaming" class="hobby-img">
+                    </div>
+                    <h3>🎮 Gaming</h3>
+                    <p>Strategy games sparked my interest in software interaction and UI/UX design.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="qualification">
+            <p class="section-subtitle">Academic Background</p>
+            <h2 class="section-title">Education</h2>
+            <div class="experience-container">
+                <div class="details-container" style="max-width: 700px; margin: 0 auto;">
+                    <div class="article-container" style="flex-direction: column; text-align: left;">
+                        <article style="width: 100%; padding: 1.5rem;">
+                            <i class="fas fa-university" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">
+                                    University of Macau
+                                </h3>
+                                <p style="color: var(--primary); font-weight: 600;">
+                                    B.Sc. in Computer Science (2023 - Present)
+                                </p>
+                                <p style="color: var(--grey); margin-top: 0.5rem;">
+                                    <i class="fas fa-award" style="color: var(--accent);"></i>
+                                    Principals' Recommended Admission (PRA) Scholarship
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="summary">
+            <p class="section-subtitle">Aspiration & Results</p>
+            <h2 class="section-title">Goals & Outcomes</h2>
+            <div class="experience-container">
+                <div class="details-container">
+                    <h3 class="experience-sub-title">
+                        <i class="fas fa-bullseye"></i> Academic Goal
+                    </h3>
+                    <p style="color: var(--grey);">
+                        Mastering the architecture of scalable web applications and implementing 
+                        secure database solutions.
+                    </p>
+                </div>
+                <div class="details-container">
+                    <h3 class="experience-sub-title">
+                        <i class="fas fa-graduation-cap"></i> Learning Outcome
+                    </h3>
+                    <p style="color: var(--grey);">
+                        Ability to design responsive web applications and understand the complete 
+                        lifecycle of software development.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <p class="section-subtitle">Get in Touch</p>
+            <h2 class="section-title">Contact Me</h2>
+            <p style="color: var(--grey); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Feel free to reach out if you have any questions or just want to connect!
+            </p>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p style="font-size: 0.85rem; color: var(--grey);">Email</p>
+                        <a href="mailto:dc32542@um.edu.mo">dc32542@um.edu.mo</a>
+                    </div>
+                </div>
+                <div class="contact-info-container">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <p style="font-size: 0.85rem; color: var(--grey);">GitHub</p>
+                        <a href="https://github.com/ChangIWai/CISC3003-DC32542-2026GitHub.git" target="_blank">
+                            @ChangIWai
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-card">
+            <form>
+                <input type="text" placeholder="Your Name" class="input-field">
+                <input type="email" placeholder="Your Email" class="input-field">
+                <textarea placeholder="Your Message" class="input-field textarea-field"></textarea>
+    
+                <button type="submit" class="submit-btn">
+                <span>&#10148;</span> Send Message
+            </button>
+            </form>
+        </section>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>CISC3003 Web Programming - 2026: DC32542 + Chang I Wai</p>
+
+            <div class="footer-socials">
+                <a href="https://github.com/ChangIWai" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:dc32542@um.edu.mo" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.classList.add('hidden');
+            }, 500);
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileMenu.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close menu when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = mobileMenu.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+
+        // Active link on scroll
+        const sections = document.querySelectorAll('section');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll to top button
+        const scrollTop = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.details-container, .project-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>         
