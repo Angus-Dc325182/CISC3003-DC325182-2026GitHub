@@ -6,13 +6,15 @@
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                     mdl-textfield--floating-label mdl-textfield--align-right">
 
-            <label id="tt2" class="material-icons mdl-badge mdl-badge--overlap" 
-                   data-badge="5">account_box</label>  
-            <div class="mdl-tooltip" for="tt2">Messages</div>                     
+            <span id="tt2" class="material-icons mdl-badge mdl-badge--overlap" 
+                   data-badge="5">account_box</span>  
+            
+            <div class="mdl-tooltip" data-mdl-for="tt2">Messages</div>                     
 
-            <label id="tt3" class="material-icons mdl-badge mdl-badge--overlap" 
-                   data-badge="4">notifications</label> 
-            <div class="mdl-tooltip" for="tt3">Notifications</div>           
+            <span id="tt3" class="material-icons mdl-badge mdl-badge--overlap" 
+                   data-badge="4">notifications</span> 
+            
+            <div class="mdl-tooltip" data-mdl-for="tt3">Notifications</div>           
 
             <label class="mdl-button mdl-js-button mdl-button--icon"
                   for="fixed-header-drawer-exp">
