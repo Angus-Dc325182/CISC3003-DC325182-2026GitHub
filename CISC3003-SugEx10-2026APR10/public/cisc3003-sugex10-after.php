@@ -29,7 +29,6 @@ if (isset($_GET['id']) && array_key_exists($_GET['id'], $customers)) {
     
     <link rel="stylesheet" href="css/material.min.css">
     
-
     <link rel="stylesheet" href="css/demo-style.css">
     <link rel="stylesheet" href="css/styles.css">
     
@@ -92,7 +91,8 @@ if (isset($_GET['id']) && array_key_exists($_GET['id'], $customers)) {
                     </div>
                     <div class="mdl-card__supporting-text">
                         <?php if ($selectedCustomerId): ?>
-                            <h4><?php echo htmlspecialchars($customers[$selectedCustomerId]['firstName'] . ' ' . $customers[$selectedCustomerId]['lastName']); ?></h4>
+                            <!-- 修復: h4 改為 h3 -->
+                            <h3><?php echo htmlspecialchars($customers[$selectedCustomerId]['firstName'] . ' ' . $customers[$selectedCustomerId]['lastName']); ?></h3>
                             <p>
                                 <strong>Email:</strong> <?php echo htmlspecialchars($customers[$selectedCustomerId]['email']); ?><br>
                                 <strong>University:</strong> <?php echo htmlspecialchars($customers[$selectedCustomerId]['university']); ?><br>
@@ -101,7 +101,8 @@ if (isset($_GET['id']) && array_key_exists($_GET['id'], $customers)) {
                                 <strong>Phone:</strong> <?php echo htmlspecialchars($customers[$selectedCustomerId]['phone']); ?>
                             </p>
                         <?php else: ?>
-                            <h4>Select a customer</h4>
+                            <!-- 修復: h4 改為 h3 -->
+                            <h3>Select a customer</h3>
                             <p>Click on a customer name in the table to view their details.</p>
                         <?php endif; ?>
                     </div>    
@@ -127,7 +128,7 @@ if (isset($_GET['id']) && array_key_exists($_GET['id'], $customers)) {
                                         <tr>
                                             <td class="mdl-data-table__cell--non-numeric">
                                                 <img src="images/tinysquare/<?php echo htmlspecialchars($order['isbn']); ?>.jpg" 
-                                                     alt="Book Cover" 
+                                                     alt="Cover of <?php echo htmlspecialchars($order['title']); ?>" 
                                                      style="width: 50px;">
                                             </td>
                                             <td class="mdl-data-table__cell--non-numeric">
@@ -141,7 +142,8 @@ if (isset($_GET['id']) && array_key_exists($_GET['id'], $customers)) {
                                 </tbody>
                                 </table>
                             <?php else: ?>
-                                <h5>Empty Order</h5>
+                                <!-- 修復: h5 改為 h3 -->
+                                <h3>Empty Order</h3>
                                 <p>There are no orders for this customer.</p>
                             <?php endif; ?>
                         <?php else: ?>
