@@ -38,7 +38,7 @@ function readOrders($customer_id, $filename) {
         $file = fopen($filename, "r");
         while (($line = fgets($file)) !== false) {
             // Using standard CSV parsing for the orders file
-            $data = str_getcsv(trim($line)); 
+            $data = str_getcsv(trim($line));
             
             // Check if the order belongs to the passed customer_id
             if (count($data) >= 5 && $data[1] == $customer_id) {
