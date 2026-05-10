@@ -160,7 +160,7 @@ input:not(:placeholder-shown) {
 }
 
 .overlay {
-    /* 這裡就是你圖中的藍色漸層 */
+
     background: linear-gradient(to right, rgb(70, 70, 255), rgba(67, 67, 255, 0.847));
     
     background-repeat: no-repeat;

@@ -1,0 +1,33 @@
+Options -Indexes
+DirectoryIndex index.php home.php
+
+# Block sensitive files (Apache 2.4 + 2.2 / LiteSpeed compatible)
+<Files ".dashboard_fatal.log">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+
+<FilesMatch "^(\.env|\.env\..*|log\.txt|composer\.(json|lock)|package(-lock)?\.json|Dockerfile|\.dockerignore)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(sql|md)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

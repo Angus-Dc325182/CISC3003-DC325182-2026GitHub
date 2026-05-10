@@ -1,0 +1,110 @@
+/* ============================================================
+   1. 字體與背景
+   ============================================================ */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* ============================================================
+   2. Profile 樣式 (左側選單頭像)
+   ============================================================ */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #263238; /* 深灰色背景 */
+    color: white;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;  
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+.profile h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profile p {
+    font-size: 11px;
+    color: #b0bec5;
+    margin: 0;
+}
+
+/* ============================================================
+   3. 導航樣式
+   ============================================================ */
+.side-nav i.material-icons {
+    margin-right: 20px;
+    color: rgba(255,255,255,0.5);
+}
+
+.side-nav .mdl-navigation__link {
+    color: rgba(255,255,255,0.8);
+    font-weight: 300;
+}
+
+/* ============================================================
+   4. 卡片樣式 (Box Shadow, Border Radius)
+   ============================================================ */
+.card-lesson {
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* 紫色與橙色標題欄 */
+.mdl-color--purple {
+    background-color: #6a1b9a !important;
+}
+
+.mdl-color--orange {
+    background-color: #ef6c00 !important;
+}
+
+.mdl-card__title-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ============================================================
+   5. 表格樣式 (Data Table)
+   ============================================================ */
+.order-table {
+    border: none !important;
+    width: 100%;
+}
+
+.order-table th {
+    background-color: #eeeeee;
+    font-weight: bold;
+}
+
+/* 書本縮圖樣式 */
+.book-cover {
+    width: 35px;
+    height: auto;
+}
+
+/* ============================================================
+   6. 總計行樣式 (跟 Figure 02 底部一樣效果)
+   ============================================================ */
+.totals td {
+    font-style: italic;
+    background-color: #fafafa;
+}
+
+.grandtotals {
+    font-weight: 700; 
+    color: #6200EA; /* 總計紫色 */
+    background-color: #f3e5f5;
+}

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UM 租賃</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/site-footer.css?v=2" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="container">
+            <h1>UM 租賃</h1>
+            <p>澳門大學校園最後一哩路交通解決方案</p>
+        </div>
+    </header>
+
+    <main class="container main-layout">
+        <!-- 左側：篩選 + 站點清單 -->
+        <section class="panel">
+            <h2>站點與車輛搜尋</h2>
+
+            <form id="filterForm" class="filter-form">
+                <label>
+                    站點 ID（可選）：
+                    <input type="number" id="stationID" name="stationID" min="1" placeholder="例如 1" />
+                </label>
+
+                <label>
+                    車型：
+                    <select id="vehicleType" name="vehicleType">
+                        <option value="">全部</option>
+                        <option value="bicycle">自行車</option>
+                        <option value="scooter">滑板車</option>
+                    </select>
+                </label>
+
+                <label>
+                    品牌（可選）：
+                    <input type="text" id="brand" name="brand" placeholder="例如 Giant" />
+                </label>
+
+                <div class="actions">
+                    <button type="submit">查詢站點</button>
+                    <button type="button" id="resetBtn" class="secondary">重設</button>
+                </div>
+            </form>
+
+            <div id="statusMessage" class="status-message">載入中...</div>
+
+            <ul id="stationList" class="station-list"></ul>
+        </section>
+
+        <!-- 右側：地圖 -->
+        <section class="panel">
+            <h2>校園地圖視圖</h2>
+            <div id="mapView" class="map-view">
+                <p class="map-placeholder">
+                    地圖區塊（Map Placeholder）<br />
+                    後續可串接 Leaflet + OpenStreetMap 或 Google Maps API
+                </p>
+            </div>
+            <p class="hint">
+                提示：目前為框架版本，地圖標記會依右側列表同步更新文字座標。
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="site-footer-inner">
+            <div class="site-footer-grid">
+                <div class="site-footer-col">
+                    <h3 class="site-footer-heading">認識 UM Mobility</h3>
+                    <ul class="site-footer-links">
+                        <li><a href="./home.php">首頁（新版入口）</a></li>
+                        <li><a href="./about.php">關於系統</a></li>
+                        <li><a href="./services.php">服務</a></li>
+                        <li><a href="./contact.php">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-col">
+                    <h3 class="site-footer-heading">入口與協作</h3>
+                    <ul class="site-footer-links">
+                        <li><a href="./login.php">登入</a></li>
+                        <li><a href="./register.php">註冊</a></li>
+                        <li><a href="./staff/home.php">職員入口</a></li>
+                        <li><a href="./admin/admin_dashboard.php">管理後台</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-col">
+                    <h3 class="site-footer-heading">條款與政策</h3>
+                    <ul class="site-footer-links">
+                        <li><a href="./about.php">服務條款</a></li>
+                        <li><a href="./contact.php">隱私權政策</a></li>
+                        <li><a href="./about.php">Cookie 說明</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-col site-footer-col-pay">
+                    <h3 class="site-footer-heading">付款方式</h3>
+                    <p class="site-footer-pay-hint muted">錢包與校園支付（示意）</p>
+                    <div class="pay-badge-grid" role="group" aria-label="Payment badges">
+                        <span class="pay-badge pay-visa">VISA</span>
+                        <span class="pay-badge pay-mc">Mastercard</span>
+                        <span class="pay-badge pay-amex">AMEX</span>
+                        <span class="pay-badge pay-jcb">JCB</span>
+                        <span class="pay-badge pay-line">LINE Pay</span>
+                        <span class="pay-badge pay-apple">Apple Pay</span>
+                        <span class="pay-badge pay-jko">JKO Pay</span>
+                        <span class="pay-badge pay-aftee">AFTEE</span>
+                        <span class="pay-badge pay-google">Google Pay</span>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer-divider" aria-hidden="true"></div>
+            <div class="site-footer-bottom">
+                <p class="site-footer-legal">
+                    © CISC3003 Team01 · 澳門大學校園單車與滑板車租賃平台（課程／演示專案）。聯絡：負責人 許啓政 dc325381@um.edu.mo · 服務時間：週一至週五 10:00–19:00（澳門時間）。澳門大學。
+                </p>
+                <div class="site-footer-social" aria-label="Social">
+                    <a class="social-icon" href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 10-11.5 9.95v-7.05H7V12h3.5V9.5c0-3.45 2.2-3.5 3.52-3.5.96 0 2 .07 2 .07V9h-1.75c-1.03 0-1.35.64-1.35 1.3V12h3.35l-.53 3.9H12.5V22A10 10 0 0022 12z"/></svg>
+                    </a>
+                    <a class="social-icon" href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 4.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zM18 6.3a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+                    </a>
+                    <a class="social-icon" href="#" aria-label="Threads">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2C7 2 3 6 3 11v7h4v-7c0-3 2.5-5.5 5.5-5.5S18 8 18 11v7h4v-7c0-5-4-9-10-9zm-7 18v2h14v-2H5z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/app.js"></script>
+</body>
+</html>

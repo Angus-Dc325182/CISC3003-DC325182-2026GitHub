@@ -1,0 +1,36 @@
+.env
+.env.local
+.env.*.local
+config/db_connect.local.php
+.dashboard_fatal.log
+project_backup.zip
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+php_errors.log
+.register_mail_debug.log
+
+# Runtime / temp
+tmp/
+temp/
+cache/
+
+# Dependency folders (if used locally)
+vendor/
+node_modules/
+
+# Debug / probe scripts (do not upload)
+*_probe.php
+**/*_probe.php
+health_db.php
+
+# Local database dumps / backups
+database/if0_*_um_rental_system.sql
+project-backups/

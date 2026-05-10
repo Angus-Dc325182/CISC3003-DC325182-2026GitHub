@@ -1,0 +1,12 @@
+.git
+.gitignore
+.idea
+.vscode
+node_modules
+vendor
+*.zip
+*.log
+database/*.sql
+admin_dashboard/
+terminals/
+agent-transcripts/
